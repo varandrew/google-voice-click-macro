@@ -8,8 +8,8 @@
     const dispatchEvent = Symbol('dispatchMouseEvent')
 
     let document = gobal.document,
-        buts = Array.from(document.querySelectorAll('.goog-button-base-content')),
-        but = buts[buts.length - 1]
+        btns = Array.from(document.querySelectorAll('.goog-button-base-content')),
+        btn = btns[btns.length - 1]
 
     // 鼠标点击事件生成器
     class MouseEventGenerator {
@@ -31,7 +31,7 @@
         }
     }
 
-    const googleVoiceClick = new MouseEventGenerator(but)
+    const googleVoiceClick = new MouseEventGenerator(btn)
 
     function getTime() {
         let time = new Date
